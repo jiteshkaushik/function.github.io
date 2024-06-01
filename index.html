@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+         padding: 0;
+         margin: 0;
+
+        }
+      .main{
+        height: 100vh;
+        width: 100%;
+        background-color: aqua;
+      }
+      .box{
+        height: 500px;
+        width: 500px;
+        background-color: red;
+        margin: auto;
+
+       
+      }
+      .img{
+        width: 100%;
+        height: 450px;
+        background-image: url("alex3.jpg");
+        background-position: center;
+        background-size: cover;
+      }
+      .button{
+        height: 50px;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        gap: 2px;
+
+      }
+      .blur{
+        filter: blur(5px);
+      }
+      .brightness{
+        filter: brightness(55%);
+      }
+      .contrast{
+        filter: contrast(250%);
+      }
+      .drop{
+        filter:drop-shadow(0px 1px 30px  rgb(26, 25, 25)) ;
+      }
+      .rotate{
+        filter: hue-rotate(90deg);
+      }
+      .saturation{
+        filter: saturate(200%);
+      }
+      .grayscale{
+        filter: grayscale(115%);
+      }
+      .opacity{
+        opacity: 0.8;
+      }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+            <div class="img2"><img class="img" src="./alex3.jpg" alt=""></div>
+            <div class="button">
+                <button class="class0" onclick="myfunction()">Blur</button>
+                <button class="class1" onclick="myfunction1()">Brightness</button>
+                <button class="class2" onclick="myfunction2()">Contrast</button>
+                <button class="class3" onclick="myfunction3()">Drop-shadow</button>
+                <button class="class4" onclick="myfunction4()">Hue-rotate</button>
+                <button class="class5" onclick="myfunction5()">Saturation</button>
+                <button class="class6" onclick="myfunction6()">Grayscale</button>
+                <button class="class7" onclick="myfunction7()">opacity</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // blur
+        function myfunction(){
+        var a =document.getElementsByClassName("img")
+            a[0].classList.toggle("blur");
+        }
+        // brightness
+        function myfunction1(){
+        var b =document.getElementsByClassName("img")
+            b[0].classList.toggle("brightness");
+        }
+        // 
+        function myfunction2(){
+        var c =document.getElementsByClassName("img")
+            c[0].classList.toggle("contrast");
+        }
+        function myfunction3(){
+        var d =document.getElementsByClassName("img")
+            d[0].classList.toggle("drop");
+        }
+        function myfunction4(){
+        var e =document.getElementsByClassName("img")
+            e[0].classList.toggle("rotate");
+        }
+        function myfunction5(){
+        var f =document.getElementsByClassName("img")
+            f[0].classList.toggle("saturation");
+        }
+        function myfunction6(){
+        var g =document.getElementsByClassName("img")
+            g[0].classList.toggle("grayscale");
+        }
+        function myfunction7(){
+        var h =document.getElementsByClassName("img")
+            h[0].classList.toggle("opacity");
+        }
+    </script>
+    
+</body>
+</html>
